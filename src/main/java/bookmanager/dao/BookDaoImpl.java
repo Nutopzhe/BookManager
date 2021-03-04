@@ -1,6 +1,6 @@
-package dao;
+package bookmanager.dao;
 
-import model.Book;
+import bookmanager.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;

@@ -1,10 +1,10 @@
-package dao;
+package bookmanager.service;
 
-import model.Book;
+import bookmanager.model.Book;
 
 import java.util.List;
 
-public interface BookDao {
+public interface BookService {
     void addBook(Book book);
 
     void updateBook(Book book);
