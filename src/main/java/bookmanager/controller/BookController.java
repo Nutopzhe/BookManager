@@ -35,13 +35,13 @@ public class BookController {
         } else {
             this.bookService.updateBook(book);
         }
-        return "redirect:/books";
+        return "/books";
     }
 
     @RequestMapping("/remove/{id}")
     public String removeBook(@PathVariable("id") int id) {
         this.bookService.removeBook(id);
-        return "redirect:/books";
+        return "/books";
     }
 
     @RequestMapping("edit/{id}")
