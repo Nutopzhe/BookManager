@@ -35,20 +35,20 @@ public class BookController {
         } else {
             this.bookService.updateBook(book);
         }
-        return "/books";
+        return "redirect:/books";
     }
 
     @RequestMapping("/remove/{id}")
     public String removeBook(@PathVariable("id") int id) {
         this.bookService.removeBook(id);
-        return "/books";
+        return "redirect:/books";
     }
 
     @RequestMapping("edit/{id}")
     public String editBook(@PathVariable("id") int id, Model model) {
         model.addAttribute("book", this.bookService.getBookById(id));
         model.addAttribute("listBooks", this.bookService.listBooks());
-        return "books";
+        return "/books";
     }
 
     @RequestMapping("bookdata/{id}")
