@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ page session="false" %>
 <html>
 <head>
@@ -47,7 +47,7 @@
 <body>
 <h1>Book Details</h1>
 
-<table>
+<table border="1" cellspacing="1" cellpadding="5">
     <tr>
         <th width="60">ID</th>
         <th width="120">Title</th>
@@ -61,5 +61,10 @@
         <td>${book.bookPrice}</td>
     </tr>
 </table>
+
+<h1>
+    <a href="/books">Back to Book list</a>
+</h1>
+
 </body>
 </html>
